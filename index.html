@@ -8,10 +8,14 @@
     
     <title>Portfolio</title>
     <style>
+      .handle {
+        color: blueviolet;
+      }
       h2 {
         font-family: Montserrat;
         font-size: 60px;
         margin-bottom: 20px;
+        color: black;
       }
 
       p {
@@ -21,6 +25,7 @@
         font-family: Montserrat;
         font-weight: 400;
         margin-top: 0;
+        color: black;
       }
 
       .intro {
@@ -34,27 +39,34 @@
       }
 
       .project-title {
-        width: 900px;
+        width: 500px;
         font-size: 20px;
         font-weight: bold;
         margin-bottom: 2px;
         margin-top: 20px;
+        color: white;
       }
       .project-description {
-        width: 900px;
+        color: white;
+        width: 500px;
         
       }
       .project-box {
         margin-top: 10px;
-        background-color: whitesmoke;
-        width: 1000px;
+        background-color: blueviolet;
+        margin-right: 0px;
+        margin-left: 0;
+        width: 550px;
         padding-left: 20px;
         padding-top: 1px;
         padding-bottom: 1px;
         border-radius: 10px;
       }
+      .project-box:hover {
+        opacity: 0.8;
+      }
       a {
-        color: black; 
+        color: white; 
         text-decoration: none;
       }
       a:hover {
@@ -64,16 +76,20 @@
     </style>
   </head>
 
-  <body>
+  <body style="background-color: white;">
+    
     <div style="
-      margin-top: 120px;
+      margin-top: 100px;
       display: grid;
-      grid-template-columns: 200px 1fr 200px;">
+      grid-template-columns: 200px 1fr">
+      
       <div style="background-color: white;">
       </div>
+
       <div class="intro">
         <div>
-          <h2>Hello, I am Anubhav 👋</h2>
+          <p> &lt; <strong class="handle">Anubhav Dhull</strong> &gt;</p>
+          <h2>Hello, I am <span style="color: blueviolet;">Anubhav</span> 👋</h2>
 
           <p> 
             I am a Data Scientist/Analyst, My mission is To boldly go where no data has gone before!
@@ -83,18 +99,41 @@
             with the world. 🌍
           </p>
         </div>
-        <div>
+
+        <div style="
+          display: grid;
+          grid-template-columns: 630px 1fr;">
+          <div>
           <h2 class="project-heading">Last Projects:</h2>
-          <div class="project-box">
-            <p class="project-title">Project 1: Data analysis on Upwork to determine the most sought-after services.</p>
-            <p class="project-description"><a href="https://databhav-upwork-data-analysis-main-5i3dow.streamlit.app/" target="_blank">Click here</a> for the Result (it might take 15 seconds to load)<br>
-              <a href="https://databhav.github.io/Upwork_data_analysis/" target="_blank">Click here</a> for code
-            </p>
+            <!-- KEEP ADDING THE PROJECTS HERE -->
+
+
+            <div class="project-box">
+              <p class="project-title">Project 1: Data analysis on Upwork to determine the most sought-after services.</p>
+              <p class="project-description"><a href="https://databhav-upwork-data-analysis-main-5i3dow.streamlit.app/" target="_blank">Click here</a> for the Result (15 seconds loading time)<br>
+                <a href="https://databhav.github.io/Upwork_data_analysis/" target="_blank">Click here</a> for code
+              </p>
+            </div>
+
           </div>
+
+          <div>
+            <h2 class="project-heading">Last Thoughts:</h2> 
+            <!-- KEEP ADDING THOUGHTS HERE -->
+            
+
+
+            <div class="project-box">
+              <p class="project-title">Random Forest Regressor</p>
+              <p class="project-description"><a href="https://databhav.github.io/last_thoughts/random_forest_regressor.html" target="_blank">Click here</a> to learn about the topic<br>
+              </p> 
+            </div> 
+
+          </div>
+
         </div>
       </div>
-      <div style="background-color: white">
-      </div>
+      
     </div>
   </body>
 
