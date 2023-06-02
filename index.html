@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap" rel="stylesheet">
-    
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet"/>
     <title>Portfolio</title>
     <style>
       .handle {
@@ -28,8 +28,16 @@
         color: black;
       }
 
+      i.fa-envelope {
+        cursor: pointer;
+      }
+
       .intro {
         padding-left: 10px;
+      }
+
+      .contact {
+        margin-top: 35px;
       }
 
       .project-heading {
@@ -98,6 +106,8 @@
             This page is my humble attempt to share my personal projects and data analysis musings 
             with the world. 🌍
           </p>
+
+          <p class="contact">You can connect with me on <i class="fa fa-envelope" style="font-size: 22px;" onclick="window.open('mailto:anubhavd1122@gmail.com')"></i></p>
         </div>
 
         <div style="
@@ -106,13 +116,13 @@
           <div>
           <h2 class="project-heading">Last Projects:</h2>
             <!-- KEEP ADDING THE PROJECTS HERE -->
-            
+
             <div class="project-box">
               <p class="project-title">Project 2: Stock Prediction using Random Forest Regressor</p>
               <p class="project-description"><a href="https://databhav-stock-prediction-randomforestregressor-st-uohoy6.streamlit.app/" target="_blank">Click here</a> for the Result (15 seconds loading time)<br>
                 <a href="https://databhav.github.io/stock_prediction_randomforestregressor/" target="_blank">Click here</a> for code
               </p>
-            </div> 
+            </div>
 
             <div class="project-box">
               <p class="project-title">Project 1: Data analysis on Upwork to determine the most sought-after services.</p>
@@ -127,7 +137,11 @@
             <h2 class="project-heading">Last Thoughts:</h2> 
             <!-- KEEP ADDING THOUGHTS HERE -->
             
-
+            <div class="project-box">
+              <p class="project-title">Association Rule Mining</p>
+              <p class="project-description"><a href="https://databhav.github.io/last_thoughts/association_rule_mining.html" target="_blank">Click here</a> to learn about the topic<br>
+              </p> 
+            </div> 
 
             <div class="project-box">
               <p class="project-title">Random Forest Regressor</p>
