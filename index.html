@@ -2,16 +2,6 @@
 <html>
 
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SENMPK5P6J"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-SENMPK5P6J');
-    </script>
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap" rel="stylesheet">
@@ -20,8 +10,11 @@
     <style>
       .handle {
         color: blueviolet;
+        margin-bottom: 20px;
+        
       }
       h2 {
+        margin-top: 10px;
         font-family: Montserrat;
         font-size: 60px;
         margin-bottom: 20px;
@@ -43,7 +36,8 @@
       }
 
       .intro {
-        padding-left: 10px;
+       margin-top: 460px; 
+        
       }
 
       .contact {
@@ -52,12 +46,14 @@
 
       .project-heading {
         font-size: 35px;
-        margin-top: 100px;
-        margin-bottom: 0;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        margin-left: 50px;
+        margin-right: 100px
       }
 
       .project-title {
-        width: 500px;
+        width: 480px;
         font-size: 20px;
         font-weight: bold;
         margin-bottom: 2px;
@@ -73,8 +69,8 @@
         margin-top: 10px;
         background-color: blueviolet;
         margin-right: 0px;
-        margin-left: 0;
-        width: 550px;
+        margin-left: 50px;
+        width: 500px;
         padding-left: 20px;
         padding-top: 1px;
         padding-bottom: 1px;
@@ -91,22 +87,44 @@
         cursor: pointer;
         text-decoration: underline;
       }
+      .parent{
+        position: relative;
+        margin-top: 100px;
+      }
+      .logo{
+        margin-left: 1px;
+        position: absolute;
+        z-index: 15;
+        margin-bottom: 0px;
+        margin-top: 30px;
+      }
     </style>
   </head>
 
   <body style="background-color: white;">
     
     <div style="
-      margin-top: 100px;
+      margin-top: 70px;
       display: grid;
-      grid-template-columns: 200px 1fr">
+      grid-template-columns: 130px 2fr 1fr">
       
+
+
       <div style="background-color: white;">
       </div>
 
-      <div class="intro">
+
+
+      <div>
+        
         <div>
+          <div>
           <p> &lt; <strong class="handle">Anubhav Dhull</strong> &gt;</p>
+          </div>
+            <div id="avatar">
+            <img class="logo" src="img/two thumbs up.png" alt="" height="360px" />
+          </div>
+          <div class="intro">
           <h2>Hello, I am <span style="color: blueviolet;">Anubhav</span> 👋</h2>
 
           <p> 
@@ -118,60 +136,41 @@
           </p>
 
           <p class="contact">You can connect with me on <i class="fa fa-envelope" style="font-size: 22px;" onclick="window.open('mailto:anubhavd1122@gmail.com')"></i></p>
-        </div>
-
-        <div style="
-          display: grid;
-          grid-template-columns: 630px 1fr;">
-          <div>
-          <h2 class="project-heading">Last Projects:</h2>
-            <!-- KEEP ADDING THE PROJECTS HERE -->
-
-            <div class="project-box">
-              <p class="project-title">Project 3: Bank Loan Risk Assessment</p>
-              <p class="project-description"><a href="https://bank-loan-risk-assessment-main-main1.streamlit.app/" target="_blank">Click here</a> for the Result (15 seconds loading time)<br>
-                <a href="https://databhav.github.io/bank-loan-risk-assessment/code.html" target="_blank">Click here</a> for code
-              </p>
-            </div>
-            
-            <div class="project-box">
-              <p class="project-title">Project 2: Stock Prediction using Random Forest Regressor</p>
-              <p class="project-description"><a href="https://databhav-stock-prediction-randomforestregressor-st-uohoy6.streamlit.app/" target="_blank">Click here</a> for the Result (15 seconds loading time)<br>
-                <a href="https://databhav.github.io/stock_prediction_randomforestregressor/" target="_blank">Click here</a> for code
-              </p>
-            </div>
-
-            <div class="project-box">
-              <p class="project-title">Project 1: Data analysis on Upwork to determine the most sought-after services.</p>
-              <p class="project-description"><a href="https://databhav-upwork-data-analysis-main-5i3dow.streamlit.app/" target="_blank">Click here</a> for the Result (15 seconds loading time)<br>
-                <a href="https://databhav.github.io/Upwork_data_analysis/" target="_blank">Click here</a> for code
-              </p>
-            </div>
-
           </div>
-
-          <div>
-            <h2 class="project-heading">Last Thoughts:</h2> 
-            <!-- KEEP ADDING THOUGHTS HERE -->
-            
-            <div class="project-box">
-              <p class="project-title">Association Rule Mining</p>
-              <p class="project-description"><a href="https://databhav.github.io/last_thoughts/association_rule_mining.html" target="_blank">Click here</a> to learn about the topic<br>
-              </p> 
-            </div> 
-
-            <div class="project-box">
-              <p class="project-title">Random Forest Regressor</p>
-              <p class="project-description"><a href="https://databhav.github.io/last_thoughts/random_forest_regressor.html" target="_blank">Click here</a> to learn about the topic<br>
-              </p> 
-            </div> 
-
-          </div>
-
         </div>
       </div>
-      
+
+
+      <div>
+        <div style="
+        display: grid;
+        grid-template-columns: 630px 1fr;">
+        <div>
+        <h2 class="project-heading">Last Projects:</h2>
+          <!-- KEEP ADDING THE PROJECTS HERE -->
+          <div class="project-box">
+            <p class="project-title"><a href="https://databhav-stock-prediction-randomforestregressor-st-uohoy6.streamlit.app/" target="_blank">Project 3: Bank loan approval risk assessment model</a> </p>
+            <p class="project-description">Click on Title for the Result<br>
+              
+            </p>
+          </div>
+
+          <div class="project-box">
+            <p class="project-title"><a href="https://databhav-stock-prediction-randomforestregressor-st-uohoy6.streamlit.app/" target="_blank">Project 2: Stock Prediction using Random Forest Regressor</a></p>
+            <p class="project-description">Click on Title for the Result<br>
+              
+            </p>
+          </div>
+
+          <div class="project-box">
+            <p class="project-title"><a href="https://databhav-upwork-data-analysis-main-5i3dow.streamlit.app/" target="_blank">Project 1: Data analysis on Upwork to determine the most sought-after services</a></p>
+            <p class="project-description">Click on Title for the Result<br>
+            </p>
+          </div>
+
+      </div>
+
     </div>
-  </body>
+
 
 </html>
